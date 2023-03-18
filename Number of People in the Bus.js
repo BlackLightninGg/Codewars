@@ -11,5 +11,17 @@
 // The second value in the first pair in the array is 0, since the bus is empty in the first bus stop.//
 
 let number = function(busStops){
-
+    let restBus = 0;
+    debugger;
+    for (let i = 0; i < busStops.length; i++) {
+        let stop = busStops[i];
+        let enterBus = stop[0];
+        let exitBus = stop[1];
+        restBus += enterBus - exitBus;
+    }
+    return restBus;
 }
+
+console.log(number([[10,0],[3,5],[1,5]]));
+console.log(number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]));
+console.log(number([[0,0]]));
