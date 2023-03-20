@@ -7,28 +7,7 @@
 // If the sperm contains the X chromosome, return "Congratulations! You're going to have a daughter."; If the sperm contains the Y chromosome, return "Congratulations! You're going to have a son.";
 
 
-function findOutlier(integers){
-
-
-  let even = integers.filter(function(el) {
-     return el % 2 === 0;
-  })
-
-  let odd = integers.filter(function(el) {
-    return el % 2 !== 0
- })
-
-  let back = even.length > odd.length ? odd : even
-
-  return back[0];
-
-
-
-
-
+function chromosomeCheck(sperm) {
 
 }
 
-console.log(findOutlier([0, 1, 2]));
-console.log(findOutlier([160, 3, 1719, 19, 11, 13, -21]));
-console.log(findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]));
