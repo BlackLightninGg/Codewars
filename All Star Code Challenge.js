@@ -3,4 +3,17 @@
 
 function strCount(str, letter) {
 
+    let a = str.split('');
+    let b = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] == letter) {
+            b++;
+        }
+
+    }
+
+    return b;
+
 }
+console.log(strCount('Hello', 'o'));
+console.log(strCount('Hello', 'l'));
