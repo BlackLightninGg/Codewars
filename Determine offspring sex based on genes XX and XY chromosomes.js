@@ -8,6 +8,15 @@
 
 
 function chromosomeCheck(sperm) {
-
+    if (sperm == "XX") {
+        let a = "Congratulations! You're going to have a daughter.";
+        return a;
+    } else if (sperm == "XY") {
+        let a = "Congratulations! You're going to have a son.";
+        return a;
+    }
 }
+
+console.log(chromosomeCheck('XY'));
+console.log(chromosomeCheck('XX'));
 
